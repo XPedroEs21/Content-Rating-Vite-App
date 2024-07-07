@@ -5,7 +5,6 @@ import './ContentRating.css';
 export class ContentRating extends Component {
   constructor() {
     super();
-    /*Initialize the states for the likes and dislikes, these are 0 for the initial state, also stablish te function to increment the number when button is clicked*/
     this.state = {
       likes: 0,
       dislikes: 0,
