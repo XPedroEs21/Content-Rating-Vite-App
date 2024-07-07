@@ -11,35 +11,37 @@ export class ContentRating extends Component {
       dislikes: 0,
 
       handlelike:() => {
-        this.setstate((prevstate) => ({
-          likes: prevstate.likes +1
+        this.setState((prevState) => ({
+          likes: prevState.likes +1
         }));
       },
       handledislike:() => {
-        this.setstate((prevstate) => ({
-          dislikes: prevstate.dislikes + 1
+        this.setState((prevState) => ({
+          dislikes: prevState.dislikes + 1
         }));
       }
     };
   }
   render() {
     return (
+      <>
      <div className='content-rating'>
-        <p>
+        <h2>
            I am learning how to use state and arrow functions, this case for buildin reacting buttons for like and dislike,help me to try them please!!
-        </p>
+        </h2>
         <div className='rating-buttons'>
 
-          <button className='like-button' onClick={this.state.handleLike}>
+          <button className="like-button" onClick={this.state.handleLike}>
             Like ({this.state.likes})
           </button>
 
-          <button className='dislike-button' onClick={this.state.handleDislike}>
+          <button className="dislike-button" onClick={this.state.handleDislike}>
             Dislike ({this.state.dislikes})
           </button>
 
         </div>
       </div>
+      </>
     );
   }
 }
