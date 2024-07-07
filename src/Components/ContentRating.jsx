@@ -8,7 +8,7 @@ export class ContentRating extends Component {
     /*Initialize the states for the likes and dislikes, these are 0 for the initial state, also stablish te function to increment the number when button is clicked*/
     this.state = {
       likes: 0,
-      dislikes 0,
+      dislikes: 0,
 
       handlelike:() => {
         this.setstate((prevstate) => ({
@@ -16,7 +16,7 @@ export class ContentRating extends Component {
         }));
       },
       handledislike:() => {
-        this.setstate((prevstate) =? ({
+        this.setstate((prevstate) => ({
           dislikes: prevstate.dislikes + 1
         }));
       }
@@ -35,7 +35,7 @@ export class ContentRating extends Component {
           </button>
 
           <button className='dislike-button' onClick={this.state.handleDislike}>
-            Dislike ({this,state,dislikes})
+            Dislike ({this.state.dislikes})
           </button>
 
         </div>
