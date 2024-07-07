@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './ContentRating.css';
 
-export class ContentRating extends Component {
+class ContentRating extends Component {
   constructor() {
     super();
     this.state = {
@@ -26,7 +26,7 @@ export class ContentRating extends Component {
       <>
      <div className='content-rating'>
         <h2>
-           I am learning how to use state and arrow functions, this case for buildin reacting buttons for like and dislike,help me to try them please!!
+           I am learning how to use state and arrow functions, this case for building reacting buttons for like and dislike,help me to try them please!!
         </h2>
         <div className='rating-buttons'>
 
